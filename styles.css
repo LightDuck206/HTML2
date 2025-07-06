@@ -1,0 +1,66 @@
+/* Comment out old li styles (Step 3) */
+/*
+li {
+  display: inline-block;
+  width: 150px;
+  margin: 5px;
+  background-color: #ddd;
+  padding: 8px;
+  border-radius: 5px;
+}
+*/
+
+/* Step 4: Style nav */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #333;
+  padding: 10px;
+}
+
+/* Step 5: Descendant selector for image in nav */
+nav img {
+  width: 10%;
+}
+
+/* Step 6: Style grid class for two columns (~40% each) */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 20px;
+  justify-content: center; /* Optional for better alignment */
+}
+
+/* Step 7: Style images inside grid only */
+.grid img {
+  width: 100%;
+}
+
+/* Step 8: Adjust grid class for spacing and alignment */
+.grid {
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 20px;
+}
+
+/* Step 9: Style flex class */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Optional: Skip link styling (Step 2) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
